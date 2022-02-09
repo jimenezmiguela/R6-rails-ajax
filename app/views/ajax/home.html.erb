@@ -2,12 +2,84 @@
 <p>Find me in app/views/ajax/home.html.erb</p>
 <%= link_to 'Session', '/ajax/session' %>
 <div id="rest-ops">
-<button id="list-members" type="button">List members</button><br>
-<label>member first name</label><input id="member-firstName"><label>member last name</label>
-<input id="member-lastName"><button id="create-member" type="button">Create member</button><br>
-<label>member ID</label><input id="member-id" type="number"><label>member first name</label>
-<input id="member-firstName1"><label>member last name</label>
-<input id="member-lastName1"><button id="update-member" type="button">Update member</button><br>
+
+  <!-- list-members -->
+  <button id="list-members" type="button">List
+    Members</button><br>
+
+  <!-- member-firstName-->
+  <label>Member's First Name</label><input id="member-firstName"><label>Member's Last Name</label>
+
+  <!-- member-lastName-->
+  <input id="member-lastName">
+
+  <!-- create-member -->
+  <button id="create-member" type="button">Create A Member</button><br>
+
+  <!-- member-id -->
+  <label>Member ID</label><input id="member-id" type="number">
+
+  <!-- member-firstName1 -->
+  <label>Member's First Name</label>
+  <input id="member-firstName1">
+
+  <!-- member-lastName1 -->
+  <label>Member's Last Name</label>
+  <input id="member-lastName1">
+
+  <!-- update-member -->
+  <button id="update-member" type="button">Update A Member</button><br>
+
+  <!-- Extend the home.html.erb file. Add another line, on which you would have an entry field for member_id and a button for Delete Member.  -->
+
+  <!-- member-id-to-delete -->
+  <label>Member ID</label><input id="member-id-to-delete" type="number">
+
+  <!-- delete-member-button-->
+  <button id="delete-member-button" type="button">Delete A Member</button><br>
+
+  <!-- list-facts-member-id-->
+  <label>Member ID</label><input id="list-facts-member-id" type="number">
+
+  <!-- list-facts-button-->
+  <button id="list-facts-button" type="button">List All Facts</button><br>
+
+  <!-- member-id-to-create-fact-to -->
+  <label>Member ID</label><input id="member-id-to-create-fact-to" type="number">
+
+  <!-- fact-text-to-create -->
+  <label>Fact Text To Create</label><input id="fact-text-to-create">
+
+  <!-- fact-likes-to-create -->
+  <label>Fact Likes To Create</label><input id="fact-likes-to-create" type="number">
+
+  <!-- create-fact-button -->
+  <button id="create-fact-button" type="button">Create A Fact</button><br>
+
+  <!-- which-member-id-to-update-fact-from -->
+  <label>Member ID</label><input id="which-member-id-to-update-fact-from" type="number">
+
+  <!-- which-fact-id-to-update -->
+  <label>Fact ID</label><input id="which-fact-id-to-update" type="number">
+
+  <!-- fact-text-to-update -->
+  <label>Fact Text To Update</label><input id="fact-text-to-update">
+
+  <!-- fact-likes-to-update -->
+  <label>Fact likes To Update</label><input id="fact-likes-to-update" type="number">
+
+  <!-- update-fact-button-->
+  <button id="update-fact-button" type="button">Update A Fact</button><br>
+
+  <!-- which-member-id-to-delete-fact-from -->
+  <label>Member ID</label><input id="which-member-id-to-delete-fact-from" type="number">
+
+  <!-- which-fact-id-to-delete -->
+  <label>Fact ID</label><input id="which-fact-id-to-delete" type="number">
+
+  <!-- delete-fact-button -->
+  <button id="delete-fact-button" type="button">Delete A Fact</button><br>
+
 </div>
 <div id="results-div"></div>
 <%= javascript_pack_tag 'ajax_ops' %>
